@@ -3,6 +3,7 @@ public class LineProblem {
     LineCalculation lineCalculation=new LineCalculation();
 
     lineCalculation.EqualCheck();
+        lineCalculation.Compare();
 
 
     }

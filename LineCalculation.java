@@ -4,6 +4,7 @@ public class LineCalculation {
 
     double x1,x2,y1,y2;
     double length;
+    double length1, length2;
     public void values(){
         System.out.println("Enter values of points");
 
@@ -22,7 +23,7 @@ public class LineCalculation {
 
     }
     public void EqualCheck(){
-        double length1, length2;
+
         System.out.println("For line 1:---");
         values();
         calculation();
@@ -34,13 +35,21 @@ public class LineCalculation {
         length2=length;
         System.out.println("length of line 2="+length2);
 
-            if(length1==length2){
-                System.out.println("Lines are equal");
-            }
-            else{
-                System.out.println("Lines are not equal");
-            }
 
 
+
+    }
+    public void Compare(){
+        Integer L1=(int)length1;
+        Integer L2=(int)length2;
+        if (L1<L2){
+            System.out.println("Line 2 is greater than line 1 ");
+        }
+        else if (L1>L2){
+            System.out.println("Line 1 is greater than line 2 ");
+        }
+        else {
+            System.out.println("Both the lines are equal");
+        }
     }
 }
